@@ -1,38 +1,185 @@
-.App {
+/* Genel ayarlar */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #f2ffe6;
+  color: #222;
+}
+
+/* ================= HEADER ================= */
+.header {
+  width: 100%;
+  background: linear-gradient(0deg, #2f6b2f, #48a04a);
+  color: #fff;
+  padding: 30px 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header h1 {
+  font-family: "Orbitron", sans-serif;
+  font-size: 50px;
+  letter-spacing: 3px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.header p {
+  margin-top: 12px;
+  font-size: 17px;
+  opacity: 0.95;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* ================= CONTENT ================= */
+.content {
+  width: 96%;
+  max-width: 1400px; /* 🔥 daha geniş */
+  margin: 45px auto;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 45px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Arama alanı */
+.content input {
+  padding: 13px 18px;
+  width: 300px;
+  border-radius: 30px;
+  border: 1px solid #2f7d32;
+  outline: none;
+  font-size: 1rem;
+}
+
+.content button {
+  padding: 13px 28px;
+  margin-left: 12px;
+  border-radius: 30px;
+  border: none;
+  background: #2f7d32;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.content button:hover {
+  background: #256428;
+  transform: translateY(-2px);
+}
+
+/* Loading & Error */
+.error {
+  margin-top: 15px;
+  color: #c0392b;
+  font-weight: bold;
+}
+
+/* ================= TRACK LIST ================= */
+.track-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 35px;
+  margin-top: 50px;
+}
+
+/* Track card */
+.track-card {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  height: 190px;
+
+  background: #d9ebc5;
+  border-left: 12px solid #356600;
+  border-radius: 12px;
+  padding: 18px;
+  text-align: left;
+
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.track-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+}
+
+/* Album cover */
+.track-card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+/* Track info */
+.track-info {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  height: 100%;
+  flex: 1;
 }
 
-.App-link {
-  color: #61dafb;
+/* Yazılar */
+.track-card h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: #2c3e10;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.track-card p {
+  margin: 4px 0;
+  font-size: 15px;
+  color: #333;
+}
+
+.album-name {
+  font-style: italic;
+  font-size: 14px;
+  color: #555;
+}
+
+.track-card .year {
+  font-size: 12px;
+  color: #666;
+}
+
+/* Audio */
+.track-card audio {
+  width: 100%;
+  margin-top: 8px;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+  width: 100%;
+  margin-top: 60px;
+  padding: 22px;
+  text-align: center;
+  background: #2f6b2f;
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+  .track-list {
+    grid-template-columns: 1fr;
   }
-  to {
-    transform: rotate(360deg);
+
+  .content {
+    padding: 30px;
+  }
+
+  .header h1 {
+    font-size: 34px;
   }
 }
