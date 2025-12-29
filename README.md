@@ -33,6 +33,6 @@ Ekran Görüntüsü
 ![MusicScope Screenshot](src/assets/ss.png)
 
 ---
-Tuana Bozdağ>>
-Web Tabanlı Programlama>>
+Tuana Bozdağ
+Web Tabanlı Programlama
 @2025
