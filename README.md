@@ -19,7 +19,6 @@ Repoda "Code" kısmında sağ üstteki yeşil "code" butonundan dosyalar .zip ol
 " cd ../../BTE311-Final-main "
 
 3. Gerekli paketleri yükleme:
-Git Bash'te?
 " npm install "
 
 4. Uygulamayı çalıştırma:
