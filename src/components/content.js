@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState,useEffect } from "react";
 
 function Content() {
   const [query, setQuery] = useState("");
@@ -42,6 +42,11 @@ function Content() {
 
     setLoading(false);
   };
+
+    useEffect(() => {
+    setQuery("Coldplay");
+    }, []);
+    
 
   return (
     <div className="content">
