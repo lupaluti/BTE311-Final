@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/BTE311/react-finalodevi/static/css/main.1477c5d4.css",
-    "main.js": "/BTE311/react-finalodevi/static/js/main.bbeb14f9.js",
-    "static/js/453.af8224cc.chunk.js": "/BTE311/react-finalodevi/static/js/453.af8224cc.chunk.js",
-    "index.html": "/BTE311/react-finalodevi/index.html",
-    "main.1477c5d4.css.map": "/BTE311/react-finalodevi/static/css/main.1477c5d4.css.map",
-    "main.bbeb14f9.js.map": "/BTE311/react-finalodevi/static/js/main.bbeb14f9.js.map",
-    "453.af8224cc.chunk.js.map": "/BTE311/react-finalodevi/static/js/453.af8224cc.chunk.js.map"
+    "main.css": "/react-finalodevi/static/css/main.1477c5d4.css",
+    "main.js": "/react-finalodevi/static/js/main.ea00ea68.js",
+    "static/js/453.af8224cc.chunk.js": "/react-finalodevi/static/js/453.af8224cc.chunk.js",
+    "index.html": "/react-finalodevi/index.html",
+    "main.1477c5d4.css.map": "/react-finalodevi/static/css/main.1477c5d4.css.map",
+    "main.ea00ea68.js.map": "/react-finalodevi/static/js/main.ea00ea68.js.map",
+    "453.af8224cc.chunk.js.map": "/react-finalodevi/static/js/453.af8224cc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1477c5d4.css",
-    "static/js/main.bbeb14f9.js"
+    "static/js/main.ea00ea68.js"
   ]
 }
